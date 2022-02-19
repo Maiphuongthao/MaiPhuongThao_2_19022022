@@ -5,6 +5,7 @@
     <title>Booki</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="description" content="Hebergement de rêve à porter de clic" />
+    <script src="https://kit.fontawesome.com/0064da0cf4.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -18,7 +19,26 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section id="search-bar">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+        <!--ajouter l'icon de fontawesome& creat searching bar-->
+        <form method="post" action="#">
+          <label for="city-name"><i class="fas fa-map-marker-alt"></i></label>
+          <input
+            type="text"
+            id="city-name"
+            name="city-name"
+            value="Marseille, France"
+          />
+          <button type="submit">
+            <span>Rechercher</span>
+            <!--add search icon for mobile-->
+          </button>
+        </form>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
