@@ -5,12 +5,14 @@
     <title>Booki</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="description" content="Hebergement de rêve à porter de clic" />
-    <script src="https://kit.fontawesome.com/0064da0cf4.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0064da0cf4.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <header>
-      <!---->
       <img src="./assets/images/logo/Booki@3x.png" alt="Logo de Booki" />
       <nav>
         <ul>
@@ -20,10 +22,10 @@
       </nav>
     </header>
     <main>
+      <!--Search bar section-->
       <section id="search-bar">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
-        <!--ajouter l'icon de fontawesome& creat searching bar-->
         <form method="post" action="#">
           <label for="city-name"><i class="fas fa-map-marker-alt"></i></label>
           <input
@@ -34,10 +36,33 @@
           />
           <button type="submit">
             <span>Rechercher</span>
-            <!--add search icon for mobile-->
           </button>
         </form>
       </section>
+      <!--Filtres section-->
+      <section id="filter-section">
+        <h3>Filtres</h3>
+            <div class="filter-card">
+                <span class="filter-icon"></span><i class="fas fa-money-bill-wave"></i></span>
+                <button class="btn-filtres">Economique</button>
+            </div>
+            <div class="filter-card">
+                <span class="filter-icon"><i class="fas fa-child"></i></span>
+                <button class="btn-filtres">Familial</button>
+            </div>
+            <div class="filter-card">
+                <span class="filter-icon"><i class="fas fa-heart"></i></span>
+                <button class="btn-filtres">Romantique</button>
+            </div>
+            <div class="filter-card">
+                <span class="filter-icon"><i class="fas fa-dog"></i></span>
+                <button class="btn-filtres">Animaux autorisés</button>
+            </div>
+      </section>
+      <div id="info">
+        <span class="info-icon"><i class="fa-solid fa-circle-info"></i></span>
+        <a>Plus de 500 logements sont disponibles dans cette ville</a>
+     </div>
     </main>
     <footer></footer>
   </body>
