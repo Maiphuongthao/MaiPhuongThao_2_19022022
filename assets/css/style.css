@@ -20,8 +20,8 @@ header {
   flex-flow: row wrap;
   align-items: center;
 }
-header nav{
-flex-basis: 30%;
+header nav {
+  flex-basis: 30%;
 }
 header img {
   width: 100px;
@@ -56,9 +56,9 @@ header ul li:hover {
 }
 /**********************Searching section*********************************/
 #search-bar {
-line-height: 15px;
-margin-top: 30px;
-margin-bottom: 30px;
+  line-height: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 h1 {
@@ -77,13 +77,13 @@ h1 {
   border-top-left-radius: 15px;
   font-size: 18px;
   background-color: #f2f2f2;
-padding: 16px;
+  padding: 16px;
 }
 
 #search-bar form input {
   border: #f2f2f2 1px solid;
   font-size: 1.2em;
-  font-weight:700;
+  font-weight: 700;
   opacity: 0.7;
   padding-left: 15px;
 }
@@ -106,40 +106,43 @@ padding: 16px;
 }
 
 /********************* filters*****************************/
+#filters {
+  margin-bottom: 25px;
+}
+h3 {
+  font-size: 1em;
+  margin-right: 30px;
+}
 #filters div {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 #filters div ul {
   display: flex;
   list-style: none;
   flex-flow: row wrap;
-  justify-content: flex-start;
 }
 #filters ul li {
-  display: flex;
-  align-items: center;
-  border: #f2f2f2 3px solid;
-  font-weight: bold;
-  border-radius: 30px;
-  padding-right: 20px;
+  border: #f2f2f2 2px solid;
+  font-weight: 700;
+  border-radius: 25px;
+  margin-right: 20px;
 }
 #filters ul li i {
-  width: 45px;
-  height: 45px;
-  text-align: center;
-  line-height: 45px;
-  background-color: #deebff;
+  background-color: #f2f2f2;
   border-radius: 50%;
   color: #0065fc;
-  font-size: 1.2em;
-
+  font-size: 1em;
+  padding: 12px;
+  margin-left: -3px;
+  margin-right: 10px;
 }
 #filters ul li a {
   color: black;
+  margin-right: 15px;
 }
 #filters p {
   font-weight: lighter;
@@ -149,50 +152,135 @@ margin-bottom: 25px;
   border: 2px solid #f2f2f2;
   color: #0065fc;
   border-radius: 100%;
+  margin-right: 10px;
 }
 
 /************Accomodation********************/
-
+#accomodation-popular {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  row-gap: 10px;
+}
 #accomodation {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 60%;
   background-color: #f2f2f2;
-  padding: 20px;
+  border-radius: 15px;
+  margin-right: 35px;
+  flex-grow: 1;
 }
-h2 {
-  font-size: 1.3em;
+#accomodation h2 {
+  font-size: 1.2em;
   font-weight: 700;
+  flex-basis: 100%;
+  margin-left: 30px;
+  margin-top: 30px;
 }
-#accomdation article {
+#accomodation article {
+  margin-left: 30px;
 }
-#accomodation figure {
+#accomodation article figure {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 25px;
+  border-radius: 15px;
   border: 4px solid white;
-  width: 300px;
-  height: 210px;
-  text-align: center;
+  width: 210px;
   background-color: white;
+  margin-bottom: 15px;
 }
 #accomodation article a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 #accomodation article figure img {
   width: 100%;
-  height: 60%;
+  height: 90px;
   object-fit: cover;
-  border-radius: 25px 25px 0 0;
+  border-radius: 15px 15px 0 0;
+}
+h3 {
+  color: black;
 }
 #accomodation article figcaption {
   background-color: white;
   font-size: 0.8em;
-  text-align: left;
-  color: black;
-  line-height: 3px;
-  padding-left: 15px;
+  line-height: 1.5em;
 }
 #accomodation figure ul {
   display: flex;
   list-style: none;
+  color: #f2f2f2;
 }
 .active {
   color: #0065fc;
 }
+#accomodation > a {
+  flex-basis: 100%;
+  margin-left: 4%;
+  margin-bottom: 4%;
+  color: black;
+  font-weight: 600;
+}
+
+/**********POPULAR******************/
+
+#most-popular {
+  display: flex;
+  flex-flow: row wrap;
+ flex-basis: 30%;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+}
+
+#most-popular h2{
+  display: flex;
+  font-size: 1.2em;
+  font-weight: 700;
+  flex-basis: 100%;
+  justify-content: space-between;
+  margin: 25px;
+}
+#most-popular article {
+  margin-left: 30px;
+}
+#most-popular article figure {
+  display: flex;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  border: 4px solid white;
+  width: 278px;
+  height: 128px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+#most-popular article a:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#most-popular article figure img {
+  width: 110px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+}
+#most-popular article figcaption {
+  background-color: white;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  padding: 10px;
+}
+#most-popular figure ul {
+  display: flex;
+  list-style: none;
+  color: #f2f2f2;
+}
+.active {
+  color: #0065fc;
+}
+#most-popular > a {
+  flex-basis: 100%;
+  margin-left: 4%;
+  margin-bottom: 4%;
+  color: black;
+  font-weight: 600;
+}
+
