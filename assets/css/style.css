@@ -171,7 +171,7 @@ h3 {
   margin-right: 35px;
   flex-grow: 1;
 }
-#accomodation h2 {
+h2 {
   font-size: 1.2em;
   font-weight: 700;
   flex-basis: 100%;
@@ -227,12 +227,12 @@ h3 {
 #most-popular {
   display: flex;
   flex-flow: row wrap;
- flex-basis: 30%;
+  flex-basis: 30%;
   background-color: #f2f2f2;
   border-radius: 15px;
 }
 
-#most-popular h2{
+#most-popular h2 {
   display: flex;
   font-size: 1.2em;
   font-weight: 700;
@@ -284,3 +284,34 @@ h3 {
   font-weight: 600;
 }
 
+/*****************activities*******************************/
+#activities {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#activities div {
+  margin-top: 20px;
+}
+#activities div{
+  width: 250px;
+  height: 350px;
+}
+#activities div figure{
+  width: 100%;
+  height: 100%;
+}
+#activities div:nth-child(2), #activities div:nth-child(4){
+  display: flex;
+  flex-direction: row;
+}
+#activities div:nth-child(2) figure, #activities div:nth-child(6) figure{
+ width: ;
+}
+#activities article figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
