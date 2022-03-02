@@ -272,6 +272,7 @@ h3 {
   display: flex;
   list-style: none;
   color: #f2f2f2;
+  margin-top: 30px;
 }
 .active {
   color: #0065fc;
@@ -289,29 +290,116 @@ h3 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 2%;
+  margin-bottom: 6%;
 }
+
+#activities h2 {
+  margin-bottom: 2%;
+}
+
 #activities div {
-  margin-top: 20px;
+  height: 400px;
+  flex-basis: 23%;
 }
-#activities div{
-  width: 250px;
-  height: 350px;
-}
-#activities div figure{
-  width: 100%;
-  height: 100%;
-}
-#activities div:nth-child(2), #activities div:nth-child(4){
-  display: flex;
-  flex-direction: row;
-}
-#activities div:nth-child(2) figure, #activities div:nth-child(6) figure{
- width: ;
-}
-#activities article figure img {
+#activities img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 15px;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#activities > div:nth-of-type(1) article,
+#activities > div:nth-of-type(3) article {
+  height: 400px;
+}
+#activities > div:nth-of-type(1) figure,
+#activities > div:nth-of-type(3) figure {
+  height: 400px;
+}
+
+#activities > div:nth-of-type(2),
+#activities > div:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#activities > div:nth-of-type(2) article:nth-of-type(1) {
+  height: 55%;
+  width: 100%;
+}
+#activities > div:nth-of-type(2) article:nth-of-type(1) figure {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#activities > div:nth-of-type(2) article:nth-of-type(2) {
+  height: 35%;
+  width: 100%;
+}
+#activities > div:nth-of-type(2) article:nth-of-type(2) figure {
+  height: 100%;
+}
+
+#activities > div:nth-of-type(4) article:nth-of-type(2) {
+  height: 50%;
+  width: 100%;
+}
+#activities > div:nth-of-type(4) article:nth-of-type(2) figure {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#activities > div:nth-of-type(4) article:nth-of-type(1) {
+  height: 40%;
+  width: 100%;
+}
+#activities > div:nth-of-type(4) article:nth-of-type(1) figure {
+  height: 100%;
+}
+
+/*#activities>div figcaption{
+  position: relative;
+  padding: 15px;
+  bottom: 50px;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+}*/
+
+#activities img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/****************footer**************************/
+footer {
+  background-color: #f2f2f2;
+}
+footer > div:nth-child(1) {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1em;
+  padding: 4% 0 2% 0;
+}
+footer > div:nth-child(1) div {
+  flex-basis: 33%;
+}
+h4 {
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+footer ul {
+  list-style: none;
+  line-height: 1.7;
+}
+footer a {
+  color: black;
 }
