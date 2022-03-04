@@ -13,6 +13,10 @@ footer > div {
   margin: 0 auto;
 }
 
+p{
+  color: black;
+}
+
 /************** Header*************************/
 header {
   display: flex;
@@ -109,7 +113,7 @@ h1 {
 #filters {
   margin-bottom: 25px;
 }
-h3 {
+#filters h3 {
   font-size: 1em;
   margin-right: 30px;
 }
@@ -171,30 +175,31 @@ h3 {
   margin-right: 35px;
   flex-grow: 1;
 }
-h2 {
+#accomodation h2 {
   font-size: 1.2em;
   font-weight: 700;
   flex-basis: 100%;
-  margin-left: 30px;
-  margin-top: 30px;
+  margin: 4% 0 3% 4%;
 }
 #accomodation article {
   margin-left: 30px;
+  flex-basis:25%;
 }
 #accomodation article figure {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   border: 4px solid white;
-  width: 210px;
+  width: 225px;
   background-color: white;
-  margin-bottom: 15px;
+  margin-bottom:20px;
+
 }
 #accomodation article a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 #accomodation article figure img {
   width: 100%;
-  height: 90px;
+  height: 100px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
@@ -205,6 +210,7 @@ h3 {
   background-color: white;
   font-size: 0.8em;
   line-height: 1.5em;
+  padding: 3px 0 3px 10px;
 }
 #accomodation figure ul {
   display: flex;
@@ -214,10 +220,11 @@ h3 {
 .active {
   color: #0065fc;
 }
+
 #accomodation > a {
   flex-basis: 100%;
-  margin-left: 4%;
-  margin-bottom: 4%;
+ margin-left: 4%;
+ margin-bottom: 4%;
   color: black;
   font-weight: 600;
 }
@@ -230,6 +237,7 @@ h3 {
   flex-basis: 30%;
   background-color: #f2f2f2;
   border-radius: 15px;
+  padding: 3%;
 }
 
 #most-popular h2 {
@@ -238,10 +246,10 @@ h3 {
   font-weight: 700;
   flex-basis: 100%;
   justify-content: space-between;
-  margin: 25px;
+  margin-bottom: 8%;
 }
 #most-popular article {
-  margin-left: 30px;
+  flex-basis: 100%;
 }
 #most-popular article figure {
   display: flex;
@@ -295,9 +303,15 @@ h3 {
 }
 
 #activities h2 {
+  margin-top: 3%;
   margin-bottom: 2%;
+  font-size: 1.2em;
+  font-weight: 700;
+  flex-basis: 100%;
 }
-
+#activities h3{
+  font-size: 1em;
+}
 #activities div {
   height: 400px;
   flex-basis: 23%;
@@ -310,16 +324,38 @@ h3 {
   border: 1px solid #f2f2f2;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+/*****************Figcaption******************************/
+#activities > div figcaption{
+  height: 55px;
+  background-color: white;
+  border: 2px #f2f2f2;
+  border-radius:0 0 15px 15px ;
+  padding: 17px;
+  align-items: center;
+}
+#activities > div:nth-of-type(1) figcaption,
+#activities > div:nth-of-type(3) figcaption{
+position: relative;
+bottom: 55px;
+}
 
+#activities > div:nth-of-type(2) figcaption,
+#activities > div:nth-of-type(4) figcaption{
+position: relative;
+bottom: 50px;
+}
+/*****************Activities normal*******************/
 #activities > div:nth-of-type(1) article,
 #activities > div:nth-of-type(3) article {
   height: 400px;
+  width: 265px;
 }
 #activities > div:nth-of-type(1) figure,
 #activities > div:nth-of-type(3) figure {
-  height: 400px;
+  height: 100%;
+  width:100% ;
 }
-
+/*************Activities flex**********************/
 #activities > div:nth-of-type(2),
 #activities > div:nth-of-type(4) {
   display: flex;
@@ -329,16 +365,14 @@ h3 {
 
 #activities > div:nth-of-type(2) article:nth-of-type(1) {
   height: 55%;
-  width: 100%;
+  width: 265px;
 }
 #activities > div:nth-of-type(2) article:nth-of-type(1) figure {
-  display: flex;
-  flex-direction: column;
   height: 100%;
 }
 #activities > div:nth-of-type(2) article:nth-of-type(2) {
   height: 35%;
-  width: 100%;
+  width: 265px;
 }
 #activities > div:nth-of-type(2) article:nth-of-type(2) figure {
   height: 100%;
@@ -346,37 +380,18 @@ h3 {
 
 #activities > div:nth-of-type(4) article:nth-of-type(2) {
   height: 50%;
-  width: 100%;
+  width: 265px;
 }
 #activities > div:nth-of-type(4) article:nth-of-type(2) figure {
-  display: flex;
-  flex-direction: column;
   height: 100%;
 }
 
 #activities > div:nth-of-type(4) article:nth-of-type(1) {
   height: 40%;
-  width: 100%;
+  width: 265px;
 }
 #activities > div:nth-of-type(4) article:nth-of-type(1) figure {
   height: 100%;
-}
-
-/*#activities>div figcaption{
-  position: relative;
-  padding: 15px;
-  bottom: 50px;
-  background-color: white;
-  border-radius: 0 0 15px 15px;
-}*/
-
-#activities img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-  border: 1px solid #f2f2f2;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 /****************footer**************************/
@@ -402,4 +417,9 @@ footer ul {
 }
 footer a {
   color: black;
+}
+
+/****************inferior à 1200px**********************************/
+@media only screen and (min-width: 1200px){
+  
 }
