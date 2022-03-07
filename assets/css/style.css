@@ -35,7 +35,7 @@ header img {
 header ul {
   display: flex;
   list-style: none;
-  flex-flow: row;
+  flex-direction: row;
   justify-content: center;
   margin: 0;
   align-items: center;
@@ -422,9 +422,103 @@ padding: 0 30px 0 30px ;
 }
 
 @media screen and (max-width:992px){
-  header,
+  /*************Header**********************/
 main, footer{
-padding: 0 30px 0 30px ;
+padding: 0;
+}
+header{
+  flex-direction: column;
+  margin: 0;
+}
+h1{
+  font-size: 1.4em;
+  line-height: 1em;
+}
+header nav{
+ width: 100%;
+}
+header ul li{
+  flex-basis: 50%;
+  height: 50%;
+}
+header nav li:hover{
+  border-bottom: 2px solid #0065fc;
+  border-top: none;
+}
+/************Search bar****************************/
+#search-bar{
+  margin-top:0 ;
+  padding: 0 20px 0 20px;
+}
+#search-bar form button span{
+  display: none;
+}
+#search-bar form button i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+  padding: 0 15px;
+  font-size: 1em;
+  font-weight: 700;
+  color: white;
+  background-color: #0065fc;
+}
+/********************Filtres**********************************/
+#filters{
+  flex-direction: column;
+  align-items:flex-start;
+  padding: 10px 20px 10px 20px;
 }
 
+#filters ul{
+  margin-top: 10px;
+}
+#filters li{
+  flex-basis: 45%;
+}
+#filters h3{
+  font-size: 1.2em;
+}
+/*************Accomodation-popular*********************/
+#accomodation-popular{
+  flex-direction: column-reverse;
+}
+#most-popular{
+  flex-basis: 100%;
+  border-radius: 0;
+  padding: 20px;
+}
+#most-popular h2{
+  font-size: 1.4em;
+  margin: 20px 0 30px 0;
+}
+#most-popular img{
+  height: 175px;
+}
+#accomodation{
+  flex-basis: 100%;
+  background-color: white;
+  border-radius: 0;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 20px;
+}
+#accomodation h2{
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+#accomodation article{
+  margin-bottom: 20px;
+}
+#accomodation img{
+  height: 220px;
+}
+#accomodation a{
+  margin-top:25px ;
+}
+
+/******************************************/
 }
