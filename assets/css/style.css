@@ -16,9 +16,6 @@ footer > div {
 a{
   color: black;
 }
-p{
-  font-size: 0.9em;
-}
 /************** Header*************************/
 header {
   display: flex;
@@ -51,6 +48,7 @@ header ul li {
   justify-content: center;
   align-items: center;
   height: 100%;
+  font-size: 1.05em;
 }
 header ul li:hover {
   text-align: center;
@@ -69,10 +67,11 @@ header ul li:hover a{
 }
 
 h1 {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 #search-bar p {
   font-weight: 300;
+  font-size: 1.06em;
 }
 #search-bar form {
   display: flex;
@@ -95,7 +94,7 @@ h1 {
   max-width: 200px;
   width: 100%;
   border: 2px solid #f2f2f2;
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 700;
   color: black;
   padding-left: 15px;
@@ -128,7 +127,7 @@ h1 {
   height: 100%;
   border-radius: 0 15px 15px 0;
   padding: 0 15px;
-  font-size: 1em;
+  font-size: 1.06em;
   font-weight: 700;
   color: white;
   background-color: #0065fc;
@@ -136,7 +135,7 @@ h1 {
 
 /********************* filters*****************************/
 #filters h3 {
-  font-size: 1em;
+  font-size: 1.2em;
   margin-right: 25px;
 }
 #filters{
@@ -150,7 +149,6 @@ h1 {
   list-style: none;
   flex-flow: row wrap;
   flex-basis: 63%;
-  justify-content: space-between;
 }
 #filters ul li {
   border: #f2f2f2 2px solid;
@@ -159,10 +157,10 @@ h1 {
   display: flex;
   align-items: center;
   border-left: none;
+  margin-right: 15px;
 }
 #filters ul li:hover{
 border: none;
-  padding: 3px;
   background-color: #deebff;
   color: #0065fc;
 }
@@ -185,16 +183,23 @@ line-height: 45px;
 padding-right: 15px;
 }
 #filters p {
+  display: flex;
   font-weight: lighter;
   flex-basis: 100%;
   margin: 25px 0;
+  align-items: center;
+  font-size: 1.06em;
 }
 #filters p i {
-  padding: 5px 10px;
+  display: flex;
+  height: 35px;
+  width: 35px;
   border: 2px solid #f2f2f2;
   color: #0065fc;
   border-radius: 100%;
   margin-right: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 /************Accomodation & popular********************/
@@ -207,14 +212,14 @@ padding-right: 15px;
 #accomodation {
   display: flex;
   flex-flow: row wrap;
-  flex-basis: 66%;
+  flex-basis: 65%;
   background-color: #f2f2f2;
   border-radius: 15px;
   justify-content: space-between;
   padding: 35px;
 }
 #accomodation h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 700;
   flex-basis: 100%;
   margin-bottom: 15px;
@@ -223,31 +228,27 @@ padding-right: 15px;
   flex-basis: 31%;
   background-color: white;
   border-radius: 12px;
-  margin-bottom:35px;
+  margin-bottom:25px;
+  box-shadow: 2px 3px 9px 2px rgba(0, 0, 0, 0.2);
 }
 #accomodation article figure {
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 3px 9px 2px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   padding: 4px;
-  flex-basis: 100%;
 }
 
 #accomodation img {
   width: 100%;
   max-width: 100%;
-  height: 100px;
+  height: 110px;
   object-fit: cover;
   border-radius: 12px 12px 0 0;
 }
-#accomodation h3 {
-  color: black;
-}
 #accomodation figcaption {
   display: flex;
-  flex-flow:column wrap ;
-  font-size: 0.8em;
+  flex-flow:column;
+  font-size: 0.85em;
   line-height: 1.5em;
   padding: 10px 10px 0;
 }
@@ -258,13 +259,16 @@ padding-right: 15px;
   color: #f2f2f2;
   font-size: 0.8em;
 }
-
+#accomodation p{
+  font-size: 1em;
+}
 #accomodation .active {
   color: #0065fc;
 }
 #accomodation > a {
   flex-basis: 100%;
   font-weight: 600;
+  font-size: 1.2em;
 }
 
 /**********POPULAR******************/
@@ -279,7 +283,7 @@ padding-right: 15px;
 }
 #most-popular h2 {
   display: flex;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 700;
   justify-content: space-between;
   flex-basis: 100%;
@@ -289,28 +293,27 @@ padding-right: 15px;
   background-color: white;
   border-radius: 12px;
   margin-bottom: 25px;
-  flex-basis: 100%;
+  box-shadow: 2px 3px 9px 2px rgba(0, 0, 0, 0.2);
 }
 #most-popular figure {
   display: flex;
   flex-direction: row;
-  box-shadow: 2px 3px 9px 2px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
  padding: 4px;
- 
 }
 
 #most-popular img {
   width: 38%;
-  height:115px;
+  min-width: 38%;
+  height:125px;
   max-width: 100%;
   object-fit: cover;
   border-radius: 12px 0 0 12px;
 }
 #most-popular figcaption {
   display: flex;
-  flex-flow: column wrap;
-  font-size: 0.8em;
+  flex-flow: column;
+  font-size: 0.85em;
   line-height: 1.5;
   padding:10px 10px 0 10px;
 }
@@ -319,7 +322,7 @@ padding-right: 15px;
   flex-direction: row;
   list-style: none;
   color: #f2f2f2;
-  font-size: 0.8em;
+  font-size: 1em;
   margin-top: auto;
 }
 #most-popular .active {
@@ -341,14 +344,11 @@ padding-right: 15px;
   font-weight: 700;
   flex-basis: 100%;
 }
-#activities h3{
-  font-size: 0.9em;
-}
 #activities div {
-  height: 400px;
   flex-basis: 23%;
+  height: 440px;
 }
-#activities{
+#activities article{
   height: 100%;
 }
 #activities figure{
@@ -428,7 +428,7 @@ padding: 0;
 }
 header{
   flex-direction: column;
-  margin: 0;
+  margin: auto;
 }
 h1{
   font-size: 1.4em;
@@ -436,6 +436,8 @@ h1{
 }
 header nav{
  width: 100%;
+ margin: 0;
+ align-items:end ;
 }
 header ul li{
   flex-basis: 50%;
@@ -476,67 +478,33 @@ header nav li:hover{
 #filters ul{
   margin-top: 10px;
 }
-#filters li{
-  flex-basis: 45%;
-}
-#filters h3{
-  font-size: 1.2em;
-}
 /*************Accomodation-popular*********************/
 #accomodation-popular{
   flex-direction: column-reverse;
 }
 #most-popular{
   flex-basis: 100%;
-  border-radius: 0;
-  padding: 20px;
+  margin-bottom: 25px;
 }
-#most-popular h2{
-  font-size: 1.4em;
-  margin: 20px 0 30px 0;
-}
-#most-popular img{
-  height: 155px;
+#most-popular article{
+  flex-basis: 100%;
 }
 #accomodation{
   flex-basis: 100%;
-  background-color: white;
-  border-radius: 0;
-  flex-direction: column;
-  padding: 20px;
-  margin-top: 20px;
-}
-#accomodation h2{
-  font-size: 1.4em;
-  margin-bottom: 20px;
-}
-#accomodation article{
-  margin-bottom: 20px;
-}
-#accomodation img{
-  height: 220px;
-  object-position: 50% 60% ;
-}
-#accomodation a{
-  margin-top:25px ;
-  font-size: 1.2em;
 }
 
 /******************Activities************************/
 #activities{
   flex-direction: column;
-  padding: 20px;
+  padding: 25px;
 }
-#activities h2{
-  font-size: 1.4em;
-  margin-bottom: 20px;
+#activities > div{
+  flex-basis: 100%;
 }
 #activities article{
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 #activities img{
-  height: 175px;
-
+height: 175px;
 }
-
 }
