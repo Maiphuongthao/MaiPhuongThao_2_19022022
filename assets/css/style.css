@@ -423,7 +423,7 @@ padding: 0 30px 0 30px ;
 
 @media screen and (max-width:992px){
   /*************Header**********************/
-main, footer{
+main{
 padding: 0;
 }
 header{
@@ -496,7 +496,7 @@ header nav li:hover{
   margin: 20px 0 30px 0;
 }
 #most-popular img{
-  height: 175px;
+  height: 155px;
 }
 #accomodation{
   flex-basis: 100%;
@@ -515,10 +515,28 @@ header nav li:hover{
 }
 #accomodation img{
   height: 220px;
+  object-position: 50% 60% ;
 }
 #accomodation a{
   margin-top:25px ;
+  font-size: 1.2em;
 }
 
-/******************************************/
+/******************Activities************************/
+#activities{
+  flex-direction: column;
+  padding: 20px;
+}
+#activities h2{
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+#activities article{
+  margin-bottom: 20px;
+}
+#activities img{
+  height: 175px;
+
+}
+
 }
