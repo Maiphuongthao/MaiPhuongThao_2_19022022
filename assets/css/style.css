@@ -104,9 +104,9 @@ h1 {
 }
 #search-bar form input::placeholder {
   font-size: 1.1em;
-  font-weight: 700;
   color: black;
   font-weight: 700;
+  opacity: 1;
 }
 
 #search-bar form button {
@@ -218,7 +218,7 @@ padding-right: 15px;
   padding: 35px;
 }
 #accomodation h2 {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 700;
   flex-basis: 100%;
   margin-bottom: 15px;
@@ -282,7 +282,7 @@ padding-right: 15px;
 }
 #most-popular h2 {
   display: flex;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 700;
   justify-content: space-between;
   flex-basis: 100%;
@@ -340,7 +340,7 @@ padding-right: 15px;
 
 #activities h2 {
   margin-bottom: 2%;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 700;
   flex-basis: 100%;
 }
