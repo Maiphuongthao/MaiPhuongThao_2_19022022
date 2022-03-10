@@ -378,6 +378,7 @@ padding-right: 15px;
   align-items: center;
   display: flex;
   padding-left: 15px;
+  padding-right: 15px;
 }
 #activities > div:nth-of-type(2n){
   display: flex;
