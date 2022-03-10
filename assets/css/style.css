@@ -365,9 +365,12 @@ padding-right: 15px;
   max-width: 100%;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
-  overflow: hidden;
+  overflow-y: hidden;
+  flex: 1;
 }
-
+#activities h3{
+  font-size: 1em;
+}
 #activities figcaption{
   height: 55px;
   align-items: center;
