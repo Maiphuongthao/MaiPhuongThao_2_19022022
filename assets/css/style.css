@@ -1,0 +1,417 @@
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main,
+footer > div {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+a{
+  color: black;
+}
+/************** Header*************************/
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+}
+header nav {
+  flex-basis: 30%;
+}
+header img {
+  width: 100px;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+  height: 80px;
+}
+
+header ul li {
+  flex-basis: 50%;
+  text-align: center;
+  margin-top: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1em;
+}
+header ul li:hover {
+  text-align: center;
+  border-top: 3px solid #0065fc;
+  margin: 0;
+}
+header ul li:hover a{
+  color: #0065fc;
+  margin: 0;
+}
+/**********************Searching section*********************************/
+#search-bar {
+  line-height: 15px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 1.3em;
+}
+#search-bar p {
+  font-weight: 300;
+  font-size: 1em;
+}
+#search-bar form {
+  display: flex;
+  flex-flow: row;
+  padding-top: 20px;
+
+}
+#search-bar form label i {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  font-size: 1em;
+  background-color: #f2f2f2;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#search-bar form input{
+  max-width: 200px;
+  width: 100%;
+  border: 2px solid #f2f2f2;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: black;
+  padding-left: 15px;
+}
+#search-bar form input:focus{
+  outline: none;
+}
+#search-bar form input::placeholder {
+  font-size: 1.1em;
+  color: black;
+  font-weight: 700;
+  opacity: 1;
+}
+
+#search-bar form button {
+  display: flex;
+  outline: none;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+#search-bar form button i {
+  display: none;
+}
+#search-bar form button span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+  padding: 0 15px;
+  font-size: 1em;
+  font-weight: 700;
+  color: white;
+  background-color: #0065fc;
+}
+
+/********************* filters*****************************/
+#filters h3 {
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+#filters{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  flex-basis: 100%;
+}
+#filters ul {
+  display: flex;
+  list-style: none;
+  flex-flow: row wrap;
+  flex-basis: 63%;
+}
+#filters ul li {
+  border: #f2f2f2 2px solid;
+  font-weight: 700;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  border-left: none;
+  margin-right: 15px;
+}
+#filters ul li:hover{
+  background-color: #deebff;
+  color: #0065fc;
+}
+#filters ul li i {
+  background-color: #deebff;
+  border-radius: 50%;
+  color: #0065fc;
+  font-size: 1em;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+#filters a {
+display: flex;
+justify-content: center;
+line-height: 45px;
+padding-right: 15px;
+}
+#filters p {
+  display: flex;
+  font-weight: lighter;
+  flex-basis: 100%;
+  margin: 25px 0;
+  align-items: center;
+}
+#filters p i {
+  display: flex;
+  height: 26px;
+  width: 26px;
+  border: 2px solid #f2f2f2;
+  color: #0065fc;
+  border-radius: 100%;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+/************Accomodation & popular********************/
+#accomodation-popular {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+/***************Accomodation*******************/
+#accomodation {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 65%;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  justify-content: space-between;
+  padding: 35px;
+}
+#accomodation h2 {
+  font-size: 1.3em;
+  font-weight: 700;
+  flex-basis: 100%;
+  margin-bottom: 15px;
+}
+#accomodation article {
+  flex-basis: 31%;
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom:25px;
+  box-shadow: 2px 3px 9px 2px rgba(0, 0, 0, 0.2);
+}
+#accomodation article figure {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 4px;
+}
+
+#accomodation img {
+  width: 100%;
+  max-width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+#accomodation figcaption {
+  display: flex;
+  flex-flow:column;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  padding: 10px 10px 0;
+}
+#accomodation figure ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  color: #f2f2f2;
+  font-size: 0.8em;
+}
+#accomodation p{
+  font-size: 1em;
+}
+#accomodation .active {
+  color: #0065fc;
+}
+#accomodation > a {
+  flex-basis: 100%;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+/**********POPULAR******************/
+
+#most-popular {
+  display: flex;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  flex-basis:31%;
+  padding: 35px;
+  flex-flow: column;
+}
+#most-popular h2 {
+  display: flex;
+  font-size: 1.3em;
+  font-weight: 700;
+  justify-content: space-between;
+  flex-basis: 100%;
+  margin-bottom: 15px;
+}
+#most-popular article {
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 2px 3px 9px 2px rgba(0, 0, 0, 0.2);
+}
+#most-popular figure {
+  display: flex;
+  flex-direction: row;
+  border-radius: 12px;
+ padding: 4px;
+}
+
+#most-popular img {
+  width: 38%;
+  min-width: 38%;
+  height:125px;
+  min-height: 100%;
+
+  object-fit: cover;
+  border-radius: 8px 0 0 8px;
+}
+#most-popular figcaption {
+  display: flex;
+  flex-flow: column;
+  font-size: 0.8em;
+  line-height: 1.5;
+  padding:10px 10px 0 10px;
+}
+#most-popular figure ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  color: #f2f2f2;
+  font-size: 1em;
+  margin-top: auto;
+}
+#most-popular .active {
+  color: #0065fc;
+}
+
+/*****************activities*******************************/
+#activities {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+#activities h2 {
+  margin-bottom: 2%;
+  font-size: 1.3em;
+  font-weight: 700;
+  flex-basis: 100%;
+}
+#activities div {
+  flex-basis: 23%;
+  height: 440px;
+}
+#activities article{
+  height: 100%;
+}
+#activities figure{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 4px 9px 2px rgba(0, 0, 0, 0.2);
+}
+#activities img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  overflow-y: hidden;
+  flex: 1;
+}
+#activities h3{
+  font-size: 1em;
+}
+#activities figcaption{
+  height: 55px;
+  align-items: center;
+  display: flex;
+  padding-left: 15px;
+}
+#activities > div:nth-of-type(2n){
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#activities > div:nth-of-type(2n+1) article{
+ height: 100%;
+}
+#activities > div:nth-of-type(2) article:first-child, #activities > div:nth-of-type(4) article:last-child{
+  height:50%
+}
+#activities > div:nth-of-type(2) article:last-child,#activities > div:nth-of-type(4) article:first-child{
+  height:40% 
+}
+/****************footer**************************/
+footer {
+  background-color: #f2f2f2;
+}
+footer > div:nth-child(1) {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1em;
+  padding: 3% 0 2% 0;
+}
+footer > div:nth-child(1) div {
+  flex-basis: 33%;
+}
+footer h4 {
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+footer ul {
+  list-style: none;
+  line-height: 1.7;
+}
+footer a {
+  color: black;
+}
+
