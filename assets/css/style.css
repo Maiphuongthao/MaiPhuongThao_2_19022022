@@ -428,3 +428,85 @@ footer a {
 height: 150px;
 }
 }
+@media screen and (max-width: 992px){
+main {
+  padding: 0;
+}
+header {
+  flex-direction: column;
+  margin: 25px auto;
+  padding: 0;
+}
+header nav {
+width: 100%;
+}
+header ul li { 
+  border-bottom: #f2f2f2 3px solid;
+  margin-top: 0;
+}
+header nav li:hover {
+  border-bottom: 2px solid #0065fc;
+  border-top: none;
+
+}
+/************Search bar****************************/
+#search-bar {
+  margin-top: 0;
+  padding: 0 25px 0 25px;
+  margin: 0;
+}
+
+/********************Filtres**********************************/
+#filters {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 25px;
+}
+
+#filters ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#filters p{
+  margin: 0;
+}
+/*************Accomodation-popular*********************/
+#accomodation-popular {
+  flex-direction: column-reverse;
+}
+#most-popular {
+  flex-basis: 100%;
+  margin-bottom: 25px;
+}
+#accomodation {
+  flex-basis: 100%;
+}
+#accomodation a{
+  margin-top: 20px;
+  margin-bottom:20px ;
+}
+/******************Activities************************/
+#activities {
+  flex-direction: column;
+  padding: 25px;
+}
+#activities div{
+  margin-bottom: 20px;
+}
+ #activities >div:nth-of-type(2n+1) article{
+   height: 250px;
+ }
+#activities > div:nth-of-type(2n){
+flex-direction: row;
+justify-content: space-between;
+}
+#activities > div:nth-of-type(2) article:first-child,
+#activities > div:nth-of-type(4) article:last-child {
+flex-basis: 61%;
+  height: 250px;
+}
+#activities > div:nth-of-type(2) article:last-child,
+#activities > div:nth-of-type(4) article:first-child {
+ flex-basis: 34%;
+  height: 250px;
+}
