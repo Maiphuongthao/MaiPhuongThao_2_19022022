@@ -461,17 +461,18 @@ footer a {
     flex-direction: column;
     align-items: flex-start;
     padding: 25px;
+    margin: 20px 0 20px 0;
   }
 
   #filters ul {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  #filters li{
-    margin-bottom: 5px;
-  }
   #filters p {
     margin: 0;
+  }
+  #filters li{
+    margin-bottom: 10px;
   }
   /*************Accomodation-popular*********************/
   #accomodation-popular {
@@ -493,17 +494,18 @@ footer a {
   #activities {
     flex-direction: column;
     padding: 25px;
+    background-color: white;
   }
-  #activities article {
+  #activities div {
     margin-bottom: 20px;
     width: 100%;
   }
-  #activities figure{
-    height:220px;
-    max-height: 100%;
+  #activities figure {
+    height: 220px;
   }
   #activities > div:nth-of-type(2n) {
-    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
   #activities > div:nth-of-type(2n + 1) article {
     height: 100%;
@@ -511,9 +513,11 @@ footer a {
   #activities > div:nth-of-type(2) article:first-child,
   #activities > div:nth-of-type(4) article:last-child {
     height: 100%;
+    flex-basis: 60%;
   }
   #activities > div:nth-of-type(2) article:last-child,
   #activities > div:nth-of-type(4) article:first-child {
     height: 100%;
+    flex-basis: 35%;
   }
 }
