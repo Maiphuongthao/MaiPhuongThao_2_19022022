@@ -446,7 +446,7 @@ footer a {
     margin-top: 0;
   }
   header nav li:hover {
-    border-bottom: 2px solid #0065fc;
+    border-bottom: 3px solid #0065fc;
     border-top: none;
   }
   /************Search bar****************************/
@@ -467,6 +467,9 @@ footer a {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  #filters li{
+    margin-bottom: 5px;
+  }
   #filters p {
     margin: 0;
   }
@@ -477,6 +480,7 @@ footer a {
   #most-popular {
     flex-basis: 100%;
     margin-bottom: 25px;
+    border-radius: 0;
   }
   #accomodation {
     flex-basis: 100%;
@@ -490,25 +494,26 @@ footer a {
     flex-direction: column;
     padding: 25px;
   }
-  #activities div {
+  #activities article {
     margin-bottom: 20px;
     width: 100%;
   }
-  #activities > div:nth-of-type(2n + 1) article {
-    height: 220px;
+  #activities figure{
+    height:220px;
+    max-height: 100%;
   }
   #activities > div:nth-of-type(2n) {
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-direction: column;
+  }
+  #activities > div:nth-of-type(2n + 1) article {
+    height: 100%;
   }
   #activities > div:nth-of-type(2) article:first-child,
   #activities > div:nth-of-type(4) article:last-child {
-    flex-basis: 61%;
-    height: 220px;
+    height: 100%;
   }
   #activities > div:nth-of-type(2) article:last-child,
   #activities > div:nth-of-type(4) article:first-child {
-    flex-basis: 34%;
-    height: 220px;
+    height: 100%;
   }
 }
