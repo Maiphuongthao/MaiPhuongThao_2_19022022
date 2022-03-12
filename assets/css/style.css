@@ -502,7 +502,7 @@ footer a {
     width: 100%;
   }
   #activities figure {
-    height: 220px;
+    height: 200px;
   }
   #activities > div:nth-of-type(2n) {
     flex-flow: row wrap;
@@ -520,5 +520,13 @@ footer a {
   #activities > div:nth-of-type(4) article:first-child {
     height: 100%;
     flex-basis: 35%;
+  }
+}
+@media screen and (max-width: 768px){
+  #accomodation article{
+    flex-basis:49%;
+  }
+  #activities{
+    margin-top:0;
   }
 }
