@@ -470,7 +470,7 @@ footer a {
   #filters p {
     margin: 0;
   }
-  #filters li{
+  #filters li {
     margin-bottom: 10px;
   }
   /*************Accomodation-popular*********************/
@@ -494,7 +494,6 @@ footer a {
   #activities {
     flex-direction: column;
     padding: 25px;
-  
   }
   #activities div {
     margin-bottom: 25px;
@@ -521,25 +520,30 @@ footer a {
     flex-basis: 35%;
   }
 }
-@media screen and (max-width: 768px){
-  #accomodation article{
-    flex-basis:49%;
+@media screen and (max-width: 768px) {
+  #accomodation article {
+    flex-basis: 49%;
   }
-  #activities{
-    margin-top:0;
+  #activities {
+    margin-top: 0;
   }
-  footer{
+  footer {
     padding: 25px;
   }
-  footer > div:nth-child(1){
+  footer > div:nth-child(1) {
     flex-direction: column;
   }
-  footer div:nth-child(1) div{
+  footer div:nth-child(1) div {
     margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 576px) {
-
+  header nav{
+    margin-top:20px ;
+  }
+  header ul {
+    height: 50px;
+  }
   #search-bar form button span {
     display: none;
   }
@@ -554,38 +558,37 @@ footer a {
     align-items: center;
   }
 
-  #search-bar form input{
+  #search-bar form input {
     border-right: transparent;
     font-size: 0.9em;
   }
-  #search-bar form button{
+  #search-bar form button {
     position: relative;
     right: 10px;
   }
-  #most-popular h2{
- margin: 20px 0 20px 0;
+  #most-popular h2 {
+    margin: 20px 0 20px 0;
   }
-  #most-popular article{
+  #most-popular article {
     margin-bottom: 15px;
   }
   #accomodation {
     flex-direction: column;
   }
-  #accomodation h2{
+  #accomodation h2 {
     margin-bottom: 20px;
   }
-  #accomodation article{
+  #accomodation article {
     flex-basis: 100%;
   }
 
   #activities > div:nth-of-type(2n) {
     flex-direction: column;
   }
-  #activities > div:nth-of-type(2n) article{
-width: 100%;
+  #activities > div:nth-of-type(2n) article {
+    width: 100%;
   }
-  #activities > div:nth-of-type(2n) article:first-child{
+  #activities > div:nth-of-type(2n) article:first-child {
     margin-bottom: 20px;
   }
-  
 }
