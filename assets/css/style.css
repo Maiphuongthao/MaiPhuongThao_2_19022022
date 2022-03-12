@@ -13,7 +13,7 @@ footer > div {
   margin: 0 auto;
 }
 
-a{
+a {
   color: black;
 }
 /************** Header*************************/
@@ -54,7 +54,7 @@ header ul li:hover {
   border-top: 3px solid #0065fc;
   margin: 0;
 }
-header ul li:hover a{
+header ul li:hover a {
   color: #0065fc;
   margin: 0;
 }
@@ -76,7 +76,6 @@ h1 {
   display: flex;
   flex-flow: row;
   padding-top: 20px;
-
 }
 #search-bar form label i {
   border-bottom-left-radius: 15px;
@@ -89,7 +88,7 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-#search-bar form input{
+#search-bar form input {
   max-width: 200px;
   width: 100%;
   border: 2px solid #f2f2f2;
@@ -98,7 +97,7 @@ h1 {
   color: black;
   padding-left: 15px;
 }
-#search-bar form input:focus{
+#search-bar form input:focus {
   outline: none;
 }
 #search-bar form input::placeholder {
@@ -137,7 +136,7 @@ h1 {
   font-size: 1.3em;
   margin-right: 25px;
 }
-#filters{
+#filters {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -157,7 +156,7 @@ h1 {
   border-left: none;
   margin-right: 15px;
 }
-#filters ul li:hover{
+#filters ul li:hover {
   background-color: #deebff;
   color: #0065fc;
 }
@@ -174,10 +173,10 @@ h1 {
   margin-right: 10px;
 }
 #filters a {
-display: flex;
-justify-content: center;
-line-height: 45px;
-padding-right: 15px;
+  display: flex;
+  justify-content: center;
+  line-height: 45px;
+  padding-right: 15px;
 }
 #filters p {
   display: flex;
@@ -221,14 +220,14 @@ padding-right: 15px;
   flex-basis: 100%;
   margin-bottom: 15px;
 }
-#accomodation h3{
+#accomodation h3 {
   font-size: 1rem;
 }
 #accomodation article {
   flex-basis: 31%;
   background-color: white;
   border-radius: 12px;
-  margin-bottom:25px;
+  margin-bottom: 25px;
   box-shadow: 2px 3px 9px 2px rgba(0, 0, 0, 0.2);
 }
 #accomodation article figure {
@@ -247,7 +246,7 @@ padding-right: 15px;
 }
 #accomodation figcaption {
   display: flex;
-  flex-flow:column;
+  flex-flow: column;
   font-size: 0.8em;
   line-height: 1.5em;
   padding: 10px 10px 0;
@@ -259,7 +258,7 @@ padding-right: 15px;
   color: #f2f2f2;
   font-size: 0.8em;
 }
-#accomodation p{
+#accomodation p {
   font-size: 1em;
 }
 #accomodation .active {
@@ -277,7 +276,7 @@ padding-right: 15px;
   display: flex;
   background-color: #f2f2f2;
   border-radius: 15px;
-  flex-basis:32%;
+  flex-basis: 32%;
   padding: 25px;
   flex-flow: column;
 }
@@ -299,7 +298,7 @@ padding-right: 15px;
   display: flex;
   flex-direction: row;
   border-radius: 12px;
- padding: 4px;
+  padding: 4px;
 }
 
 #most-popular img {
@@ -315,7 +314,7 @@ padding-right: 15px;
   flex-flow: column;
   font-size: 0.8em;
   line-height: 1.5;
-  padding:10px 10px 0 10px;
+  padding: 10px 10px 0 10px;
 }
 #most-popular figure ul {
   display: flex;
@@ -328,7 +327,7 @@ padding-right: 15px;
 #most-popular .active {
   color: #0065fc;
 }
-#most-popular h3{
+#most-popular h3 {
   font-size: 1rem;
 }
 /*****************activities*******************************/
@@ -350,10 +349,10 @@ padding-right: 15px;
   flex-basis: 23%;
   height: 440px;
 }
-#activities article{
+#activities article {
   height: 100%;
 }
-#activities figure{
+#activities figure {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -370,29 +369,31 @@ padding-right: 15px;
   overflow-y: hidden;
   flex: 1;
 }
-#activities h3{
+#activities h3 {
   font-size: 1em;
 }
-#activities figcaption{
+#activities figcaption {
   height: 55px;
   align-items: center;
   display: flex;
   padding-left: 15px;
   padding-right: 15px;
 }
-#activities > div:nth-of-type(2n){
+#activities > div:nth-of-type(2n) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#activities > div:nth-of-type(2n+1) article{
- height: 100%;
+#activities > div:nth-of-type(2n + 1) article {
+  height: 100%;
 }
-#activities > div:nth-of-type(2) article:first-child, #activities > div:nth-of-type(4) article:last-child{
-  height:50%
+#activities > div:nth-of-type(2) article:first-child,
+#activities > div:nth-of-type(4) article:last-child {
+  height: 50%;
 }
-#activities > div:nth-of-type(2) article:last-child,#activities > div:nth-of-type(4) article:first-child{
-  height:40% 
+#activities > div:nth-of-type(2) article:last-child,
+#activities > div:nth-of-type(4) article:first-child {
+  height: 40%;
 }
 /****************footer**************************/
 footer {
@@ -424,7 +425,100 @@ footer a {
   footer {
     padding: 0 25px 0 25px;
   }
-#most-popular img{
-height: 150px;
+  #most-popular img {
+    height: 150px;
+  }
 }
+@media screen and (max-width: 992px) {
+  main {
+    padding: 0;
+  }
+  header {
+    flex-direction: column;
+    margin: 25px auto;
+    padding: 0;
+  }
+  header nav {
+    width: 100%;
+  }
+  header ul li {
+    border-bottom: #f2f2f2 3px solid;
+    margin-top: 0;
+  }
+  header nav li:hover {
+    border-bottom: 3px solid #0065fc;
+    border-top: none;
+  }
+  /************Search bar****************************/
+  #search-bar {
+    margin-top: 0;
+    padding: 0 25px 0 25px;
+    margin: 0;
+  }
+
+  /********************Filtres**********************************/
+  #filters {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+    margin: 20px 0 20px 0;
+  }
+
+  #filters ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #filters p {
+    margin: 0;
+  }
+  #filters li{
+    margin-bottom: 10px;
+  }
+  /*************Accomodation-popular*********************/
+  #accomodation-popular {
+    flex-direction: column-reverse;
+  }
+  #most-popular {
+    flex-basis: 100%;
+    margin-bottom: 25px;
+    border-radius: 0;
+  }
+  #accomodation {
+    flex-basis: 100%;
+    background-color: white;
+  }
+  #accomodation a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /******************Activities************************/
+  #activities {
+    flex-direction: column;
+    padding: 25px;
+  
+  }
+  #activities div {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  #activities figure {
+    height: 220px;
+  }
+  #activities > div:nth-of-type(2n) {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  #activities > div:nth-of-type(2n + 1) article {
+    height: 100%;
+  }
+  #activities > div:nth-of-type(2) article:first-child,
+  #activities > div:nth-of-type(4) article:last-child {
+    height: 100%;
+    flex-basis: 60%;
+  }
+  #activities > div:nth-of-type(2) article:last-child,
+  #activities > div:nth-of-type(4) article:first-child {
+    height: 100%;
+    flex-basis: 35%;
+  }
 }
