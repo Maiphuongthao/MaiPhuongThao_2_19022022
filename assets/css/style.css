@@ -485,6 +485,7 @@ footer a {
   }
   #accomodation {
     flex-basis: 100%;
+    background-color: white;
   }
   #accomodation a {
     margin-top: 20px;
@@ -494,7 +495,7 @@ footer a {
   #activities {
     flex-direction: column;
     padding: 25px;
-    background-color: white;
+  
   }
   #activities div {
     margin-bottom: 20px;
