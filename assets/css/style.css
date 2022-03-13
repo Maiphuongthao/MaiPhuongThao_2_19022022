@@ -482,6 +482,9 @@ footer a {
     margin-bottom: 20px;
     border-radius: 0;
   }
+  #most-popular img{
+    height: 135px;
+  }
   #accomodation {
     flex-basis: 100%;
     background-color: white;
@@ -582,9 +585,6 @@ footer a {
   }
   #most-popular article {
     margin-bottom: 15px;
-  }
-  #most-popular img{
-    height: 135px;
   }
   #accomodation {
     flex-direction: column;
