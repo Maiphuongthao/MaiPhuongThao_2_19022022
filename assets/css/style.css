@@ -81,8 +81,8 @@ h1 {
   border-top-left-radius: 15px;
   font-size: 1em;
   background-color: #f2f2f2;
-  height: 44px;
-  width: 44px;
+  height: 50px;
+  width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +132,7 @@ h1 {
 
 /********************* filters*****************************/
 #filters h3 {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin-right: 25px;
 }
 #filters {
@@ -164,8 +164,8 @@ h1 {
   border-radius: 50%;
   color: #0065fc;
   font-size: 1em;
-  height: 45px;
-  width: 45px;
+  height: 50px;
+  width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,8 +186,8 @@ h1 {
 }
 #filters p i {
   display: flex;
-  height: 26px;
-  width: 26px;
+  height: 30px;
+  width: 30px;
   border: 2px solid #f2f2f2;
   color: #0065fc;
   border-radius: 100%;
@@ -266,7 +266,7 @@ h1 {
 #accomodation > a {
   flex-basis: 100%;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 /**********POPULAR******************/
@@ -544,6 +544,9 @@ footer a {
   header ul {
     height: 50px;
   }
+  #search-bar form{
+    margin-top: 20px;
+  }
   #search-bar form button span {
     display: none;
   }
@@ -551,11 +554,12 @@ footer a {
     border-radius: 15px;
     font-size: 1em;
     background-color: #0065fc;
-    height: 44px;
-    width: 44px;
+    height: 50px;
+    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
   }
 
   #search-bar form input {
@@ -566,22 +570,34 @@ footer a {
     position: relative;
     right: 10px;
   }
+  #filters p{
+   align-items:baseline;
+  }
+  #filters p i{
+    font-size: 0.8em;
+  width: 35px;
+  }
   #most-popular h2 {
-    margin: 20px 0 20px 0;
+    margin: 20px 0 25px 0;
   }
   #most-popular article {
     margin-bottom: 15px;
+  }
+  #most-popular img{
+    height: 135px;
   }
   #accomodation {
     flex-direction: column;
   }
   #accomodation h2 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   #accomodation article {
     flex-basis: 100%;
   }
-
+#activities h2{
+  margin-bottom: 25px;
+}
   #activities > div:nth-of-type(2n) {
     flex-direction: column;
   }
