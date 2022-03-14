@@ -188,6 +188,7 @@ h1 {
   display: flex;
   height: 30px;
   width: 30px;
+  min-width: 30px;
   border: 2px solid #f2f2f2;
   color: #0065fc;
   border-radius: 100%;
@@ -575,10 +576,6 @@ footer a {
   }
   #filters p{
    align-items:baseline;
-  }
-  #filters p i{
-    font-size: 0.8em;
-  width: 35px;
   }
   #most-popular h2 {
     margin: 20px 0 25px 0;
