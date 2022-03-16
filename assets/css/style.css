@@ -175,6 +175,7 @@ h1 {
   display: flex;
   justify-content: center;
   padding-right: 15px;
+  align-items: center;
 }
 #filters p {
   display: flex;
