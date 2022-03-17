@@ -60,7 +60,6 @@ header ul li:hover a {
 }
 /**********************Searching section*********************************/
 #search-bar {
-  line-height: 15px;
   margin-top: 30px;
   margin-bottom: 25px;
 }
@@ -91,7 +90,7 @@ h1 {
 #search-bar form input {
   max-width: 200px;
   width: 100%;
-  border: 2px solid #f2f2f2;
+  border: 1px solid #f2f2f2;
   font-size: 1.2em;
   font-weight: 700;
   color: black;
@@ -133,7 +132,7 @@ h1 {
 
 /********************* filters*****************************/
 #filters h3 {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin-right: 25px;
 }
 #filters {
@@ -164,9 +163,9 @@ h1 {
   background-color: #deebff;
   border-radius: 50%;
   color: #0065fc;
-  font-size: 1em;
-  height: 45px;
-  width: 45px;
+  font-size: 1.2em;
+  height: 50px;
+  width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,8 +174,8 @@ h1 {
 #filters a {
   display: flex;
   justify-content: center;
-  line-height: 45px;
   padding-right: 15px;
+  align-items: center;
 }
 #filters p {
   display: flex;
@@ -187,8 +186,9 @@ h1 {
 }
 #filters p i {
   display: flex;
-  height: 26px;
-  width: 26px;
+  height: 30px;
+  width: 30px;
+  min-width: 30px;
   border: 2px solid #f2f2f2;
   color: #0065fc;
   border-radius: 100%;
@@ -227,7 +227,7 @@ h1 {
   flex-basis: 31%;
   background-color: white;
   border-radius: 12px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   box-shadow: 2px 3px 9px 2px rgba(0, 0, 0, 0.2);
 }
 #accomodation article figure {
@@ -256,7 +256,6 @@ h1 {
   list-style: none;
   flex-direction: row;
   color: #f2f2f2;
-  font-size: 0.8em;
 }
 #accomodation p {
   font-size: 1em;
@@ -267,7 +266,7 @@ h1 {
 #accomodation > a {
   flex-basis: 100%;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 /**********POPULAR******************/
@@ -291,7 +290,7 @@ h1 {
 #most-popular article {
   background-color: white;
   border-radius: 12px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   box-shadow: 2px 3px 9px 2px rgba(0, 0, 0, 0.2);
 }
 #most-popular figure {
@@ -403,7 +402,7 @@ footer > div:nth-child(1) {
   display: flex;
   flex-flow: row wrap;
   font-size: 1em;
-  padding: 3% 0 2% 0;
+  padding: 30px 0 20px 0;
 }
 footer > div:nth-child(1) div {
   flex-basis: 33%;
@@ -471,7 +470,7 @@ footer a {
   #filters p {
     margin: 0;
   }
-  #filters li{
+  #filters li {
     margin-bottom: 10px;
   }
   /*************Accomodation-popular*********************/
@@ -480,8 +479,11 @@ footer a {
   }
   #most-popular {
     flex-basis: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     border-radius: 0;
+  }
+  #most-popular img{
+    height: 135px;
   }
   #accomodation {
     flex-basis: 100%;
@@ -495,10 +497,9 @@ footer a {
   #activities {
     flex-direction: column;
     padding: 25px;
-  
   }
   #activities div {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     width: 100%;
   }
   #activities figure {
@@ -522,20 +523,84 @@ footer a {
     flex-basis: 35%;
   }
 }
-@media screen and (max-width: 768px){
-  #accomodation article{
-    flex-basis:49%;
+@media screen and (max-width: 768px) {
+  #accomodation article {
+    flex-basis: 49%;
   }
-  #activities{
-    margin-top:0;
+  #activities {
+    margin-top: 0;
   }
-  footer{
+  footer {
     padding: 25px;
   }
-  footer > div:nth-child(1){
+  footer > div:nth-child(1) {
     flex-direction: column;
   }
-  footer div:nth-child(1) div{
+  footer div:nth-child(1) div {
     margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header nav{
+    margin-top:20px ;
+  }
+  header ul {
+    height: 50px;
+  }
+  #search-bar form{
+    margin-top: 20px;
+  }
+  #search-bar form button span {
+    display: none;
+  }
+  #search-bar form button i {
+    border-radius: 15px;
+    font-size: 1em;
+    background-color: #0065fc;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  #search-bar form input {
+    border-right: transparent;
+    font-size: 0.9em;
+  }
+  #search-bar form button {
+    position: relative;
+    right: 10px;
+  }
+  #filters p{
+   align-items:baseline;
+  }
+  #most-popular h2 {
+    margin: 20px 0 25px 0;
+  }
+  #most-popular article {
+    margin-bottom: 15px;
+  }
+  #accomodation {
+    flex-direction: column;
+  }
+  #accomodation h2 {
+    margin-bottom: 25px;
+  }
+  #accomodation article {
+    flex-basis: 100%;
+  }
+#activities h2{
+  margin-bottom: 25px;
+}
+  #activities > div:nth-of-type(2n) {
+    flex-direction: column;
+  }
+  #activities > div:nth-of-type(2n) article {
+    width: 100%;
+  }
+  #activities > div:nth-of-type(2n) article:first-child {
+    margin-bottom: 20px;
   }
 }
